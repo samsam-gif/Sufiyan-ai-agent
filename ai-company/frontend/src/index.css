@@ -1,0 +1,64 @@
+:root {
+  --bg-main: #FDF8F6;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F8F4F9;
+  --bg-container: #EADDFF;
+  --bg-container-text: #21005D;
+  --bg-variant: #F3EDF7;
+  --border-color: #CAC4D0;
+  --border-highlight: #D0BCFF;
+  --primary: #6750A4;
+  --primary-dark: #21005D;
+  --primary-glow: rgba(103, 80, 164, 0.25);
+  --success: #24A148;
+  --warning: #F59E0B;
+  --danger: #B3261E;
+  --info: #0061A4;
+  --text-main: #1D1B1E;
+  --text-muted: #49454F;
+  --telemetry-bg: #1D1B1E;
+  --telemetry-text: #E6E1E5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+code, pre {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+input, textarea, select {
+  font-family: inherit;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3EDF7;
+}
+::-webkit-scrollbar-thumb {
+  background: #CAC4D0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6750A4;
+}
+

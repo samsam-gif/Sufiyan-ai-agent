@@ -1,0 +1,45 @@
+app:
+  name: "AI Company Command Center"
+  env: "development"
+  host: "127.0.0.1"
+  port: 8000
+  db_path: "./memory/company.db"
+  projects_dir: "./projects"
+
+security:
+  jwt_secret: "ai-company-master-secret-key-2026"
+  jwt_expiry_sec: 86400
+  rate_limit_per_min: 120
+
+permissions:
+  medium_risk_auto_approve: true
+  high_risk_auto_approve: false
+
+providers:
+  gemini:
+    enabled: false
+    priority: 1
+    timeout_sec: 30
+    models:
+      - "gemini-2.5-flash"
+      - "gemini-2.5-pro"
+  openai:
+    enabled: false
+    priority: 2
+    timeout_sec: 30
+    models:
+      - "gpt-4o"
+      - "gpt-4o-mini"
+  anthropic:
+    enabled: false
+    priority: 3
+    timeout_sec: 30
+    models:
+      - "claude-3-5-sonnet"
+      - "claude-3-5-haiku"
+  custom:
+    enabled: false
+    priority: 4
+    timeout_sec: 30
+    models:
+      - "custom-model-1"

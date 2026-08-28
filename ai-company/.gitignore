@@ -1,0 +1,14 @@
+.env
+*.db
+*.sqlite
+*.sqlite3
+memory/*.db
+__pycache__/
+*.py[cod]
+*$py.class
+node_modules/
+dist/
+logs/*.log
+logs/*.pid
+projects/*/workspace/dist/
+.DS_Store

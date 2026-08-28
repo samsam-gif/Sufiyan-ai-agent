@@ -1,0 +1,10 @@
+# Optional dependencies if running with full FastAPI / Uvicorn stack
+# Note: AI Company Command Center features a zero-dependency autonomous fallback engine
+# that runs directly on vanilla Python 3.11 without requiring pip installs.
+fastapi>=0.110.0
+uvicorn>=0.28.0
+pydantic>=2.6.0
+sqlalchemy>=2.0.0
+websockets>=12.0
+requests>=2.31.0
+pytest>=8.0.0
